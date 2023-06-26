@@ -158,7 +158,6 @@ def execute_and_return(command_string: str) -> Tuple[str, str]:
     std_out, std_err = execute_and_return_decoded_std_streams(command_string)
     return std_out, std_err
 
-__cuda_devices = None
 def get_cuda_devices():
     global __cuda_devices
     if __cuda_devices is None:
